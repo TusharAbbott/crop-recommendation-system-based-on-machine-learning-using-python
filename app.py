@@ -144,6 +144,11 @@ def crop_recommend():
     title = 'Harvestify - Crop Recommendation'
     return render_template('crop.html', title=title)
 
+@ app.route('/monitoring')
+def mon():
+    title = 'Harvestify - Crop monitoring'
+    return render_template('mon.html', title=title)
+
 # render fertilizer recommendation form page
 
 
