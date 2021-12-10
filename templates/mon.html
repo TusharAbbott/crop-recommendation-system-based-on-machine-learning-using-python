@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <style>
+      body {
+        background: rgb(240, 240, 240);
+      }
+      .graph {
+        display: grid;
+        grid-template-columns: 450px 450px 450px;
+        grid-gap: 5px;
+        /* background-color: #2196F3; */
+        padding: 2px;
+      }
+      h1 {
+        text-align: center;
+      }
+      iframe {
+        box-shadow: 0 0 30px #ccc;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Soil Montoiring</h1>
+    <div class="graph">
+      <iframe
+        width="450"
+        height="218"
+        style="border: 3px solid pink"
+        scrolling="no"
+        src="https://thingspeak.com/channels/1577216/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=15&type=spline"
+      ></iframe>
+      <iframe
+        width="450"
+        height="218"
+        style="border: 3px solid red"
+        scrolling="no"
+        src="https://thingspeak.com/channels/1577216/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=15&type=spline"
+      ></iframe>
+      <iframe
+        width="450"
+        height="218"
+        style="border: 3px solid purple"
+        scrolling="no"
+        src="https://thingspeak.com/channels/1577216/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=15&type=spline"
+      ></iframe>
+      <iframe
+        width="450"
+        height="218"
+        style="border: 3px solid orange"
+        scrolling="no"
+        src="https://thingspeak.com/channels/1577216/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=15&type=spline"
+      ></iframe>
+      <iframe
+        width="450"
+        height="218"
+        style="border: 3px solid yellow"
+        scrolling="no"
+        src="https://thingspeak.com/channels/1577216/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=15&type=spline"
+      ></iframe>
+      <iframe
+        width="450"
+        height="218"
+        style="border: 3px solid green"
+        scrolling="no"
+        src="https://thingspeak.com/channels/1577216/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=15&type=spline"
+      ></iframe>
+    </div>
+  </body>
+</html>
