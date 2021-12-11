@@ -133,7 +133,7 @@ app = Flask(__name__)
 
 @ app.route('/')
 def home():
-    title = 'Harvestify - Home'
+    title = 'Cropify - Home'
     return render_template('index.html', title=title)
 
 # render crop recommendation form page
@@ -141,12 +141,12 @@ def home():
 
 @ app.route('/crop-recommend')
 def crop_recommend():
-    title = 'Harvestify - Crop Recommendation'
+    title = 'Cropify- Crop Recommendation'
     return render_template('crop.html', title=title)
 
 @ app.route('/monitoring')
 def mon():
-    title = 'Harvestify - Crop monitoring'
+    title = 'Cropify- Crop monitoring'
     return render_template('mon.html', title=title)
 
 # render fertilizer recommendation form page
